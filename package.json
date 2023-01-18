@@ -1,0 +1,23 @@
+{
+  "name": "full_stack_learning",
+  "version": "1.0.0",
+  "description": "Learning some commands for NodeJS",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sancg/Full_stack_learning.git"
+  },
+  "keywords": [
+    "Node",
+    "backend"
+  ],
+  "author": "Santiago Cano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sancg/Full_stack_learning/issues"
+  },
+  "homepage": "https://github.com/sancg/Full_stack_learning#readme"
+}
