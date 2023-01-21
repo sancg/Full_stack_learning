@@ -3,8 +3,7 @@ const rect = require("./rectangle");
 function solveRectangle(l, b) {
   rect(l, b, (err, rectangle) => {
     if (err) {
-      console.log(err);
-      return 0;
+      console.log(err.message);
     }
 
     if (rectangle) {
