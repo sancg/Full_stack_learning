@@ -1,5 +1,5 @@
 {
-  "name": "fullstack",
+  "name": "full_stack_learning",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,5 +17,13 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "vite": "^4.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sancg/Full_stack_learning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sancg/Full_stack_learning/issues"
+  },
+  "homepage": "https://github.com/sancg/Full_stack_learning#readme"
 }
