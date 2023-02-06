@@ -1,0 +1,16 @@
+{
+  "name": "Backend",
+  "packageManager": "yarn@3.3.1",
+  "version": "1.0.0",
+  "description": "HTTP Modules and learning common practices",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": "github.com/sancg/Full_stack_learning",
+  "author": "Santiago",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
