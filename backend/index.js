@@ -17,6 +17,7 @@ function solveRectangle(l, b) {
   });
 }
 
+// Testing area
 solveRectangle(4, 6);
 solveRectangle(0, 2);
 solveRectangle(10, 2);
