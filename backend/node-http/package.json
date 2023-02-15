@@ -1,0 +1,8 @@
+{
+  "name": "node-http",
+  "packageManager": "yarn@3.3.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  }
+}

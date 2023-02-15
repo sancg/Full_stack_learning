@@ -28,6 +28,7 @@ server.listen(port, hostname, () => {
 /*
 Previous class where I learned ErrorFirstHandler Callbacks
 And the module import / export methods
+
 const rect = require("./rectangle");
 
 function solveRectangle(l, b) {
@@ -47,10 +48,13 @@ function solveRectangle(l, b) {
   });
 }
 
+*/
+// Testing area
 solveRectangle(4, 6);
 solveRectangle(0, 2);
 solveRectangle(10, 2);
-solveRectangle(-5, 5);*/
+solveRectangle(-5, 5);
+
 // const rectangle = require("./rectangle");
 
 // const { perimeter, area } = rectangle;
