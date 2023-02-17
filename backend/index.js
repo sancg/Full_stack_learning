@@ -1,30 +1,3 @@
-const http = require("http");
-
-const hostname = "localhost";
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  console.log(req.headers);
-
-  res.statusCode = 200;
-
-  res.setHeader("Content-Type", "text/html");
-  res.end(
-    `<html>
-      <header>
-      </header>
-
-      <body>
-        <h1>Hello my gorgeous friend~</h1>
-      </body>
-    </html>`
-  );
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at: http://${hostname}:${port}`);
-});
-
 /*
 Previous class where I learned ErrorFirstHandler Callbacks
 And the module import / export methods
@@ -48,13 +21,12 @@ function solveRectangle(l, b) {
   });
 }
 
-*/
 // Testing area
 solveRectangle(4, 6);
 solveRectangle(0, 2);
 solveRectangle(10, 2);
 solveRectangle(-5, 5);
-
+*/
 // const rectangle = require("./rectangle");
 
 // const { perimeter, area } = rectangle;
