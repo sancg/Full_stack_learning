@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Test</title>
+</head>
+<body>
+    <nav><div>Logo</div><div><ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/users">Users</a></li>
+        <li><a href="/create-user">Create User</a></li>
+    </ul></div></nav>
+    <main>
+        <h1>Greetings from the Home Module</h1>
+        <section>
+            <form action="/create-user" method="post" 
+            style="display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1rem;">
+                <label for="username">Create User</label>
+                <input type="text" id="username" name="username" placeholder="Rabi Maria">
+                <button type="submit">Create</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
