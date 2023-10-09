@@ -1,18 +1,17 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+
+const display = require("./route/display");
+const admin = require("./route/admin");
+
 const app = express();
 const port = 3000;
 
-app.use("/my-listing", (req, res, next) => {
-    res.send(`<h1> Listing Items </h1>`);
-});
+// Watcher to incoming POST Request
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/", (req, res, next) => {
-    res.send(`<h1>Home page</h1>`);
-});
-
-app.get("/", (req, res) => {
-    res.send({ data: "Great work" });
-});
+app.use(display);
+app.use(admin);
 
 app.listen(port, () => {
     console.log(`App Running on port ${port}`);
