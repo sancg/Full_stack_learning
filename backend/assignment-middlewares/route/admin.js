@@ -1,6 +1,12 @@
-const express = require("express");
+import path from "node:path";
 
-const route = express.Router();
+import { Router } from "express";
+import { root } from "../utils/root.js";
+const route = Router();
+
+route.get("/users", (req, res) => {
+    res.sendFile(path.join(root, "templates", "users.html"));
+});
 
 route.get("/add-list", (req, res) => {
     res.send(
@@ -13,4 +19,4 @@ route.post("/my-listing", (req, res, next) => {
     res.redirect("/");
 });
 
-module.exports = route;
+export default route;
