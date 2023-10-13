@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    height: 50px;
+}
+
+.header-nav * {
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.header-nav li{
+    list-style: none;
+    margin:0 1rem;
+}
+
+main{
+    max-width: 1280px;
+    margin: 0 2em;
+}
