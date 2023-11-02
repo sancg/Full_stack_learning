@@ -1,7 +1,7 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Serving static files and routing in Express",
   "main": "app.js",
   "type": "module",
   "scripts": {
