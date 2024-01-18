@@ -3,13 +3,16 @@ import express from 'express';
 import bps from 'body-parser';
 
 import display from './route/display.js';
-import admin from './route/admin.js';
+import { admin } from './route/admin.js';
 import root from './utils/root.js';
 
 const app = express();
 const port = 3000;
 
-// Watcher to incoming POST Request
+// Adding a global configuration value | Ref: https://expressjs.com/en/5x/api.html#app.set
+app.set('view engine', 'pug');
+app.set('views', 'engine');
+
 app.use(bps.urlencoded({ extended: false }));
 app.use(express.static(path.join(root, 'public')));
 
