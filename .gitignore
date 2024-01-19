@@ -1,6 +1,11 @@
+### Assesments Course
+**/assignment*/package-lock*
+class_resource*
+
 # Logs
 logs
 *.log
+package-*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

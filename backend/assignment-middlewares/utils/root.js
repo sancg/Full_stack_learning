@@ -1,11 +1,5 @@
-import path from "node:path";
-export const root = path
-    .join(path.dirname(import.meta.url), "../")
-    .replace("file:", "")
-    .trim();
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
-const FilePath = {
-    root,
-};
-
-export default FilePath;
+export default root;

@@ -1,7 +1,7 @@
 {
     "name": "assignment-user-create",
     "version": "1.0.0",
-    "description": "",
+    "description": "Create basic routes using the core Node.js functions for servers",
     "main": "index.js",
     "scripts": {
         "dev": "node --watch index.mjs"
