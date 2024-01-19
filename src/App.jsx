@@ -1,13 +1,10 @@
-import { useState } from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
-
+import Gallery, { Profile } from './Gallery';
+export default function App() {
   return (
-    <div className="App">
-      <h1>Simple frontEnd dev</h1>
-    </div>
+    <>
+      <Gallery />
+      <h2>From App</h2>
+      <Profile />
+    </>
   );
 }
-
-export default App;
