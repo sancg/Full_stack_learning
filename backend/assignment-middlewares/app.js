@@ -9,12 +9,14 @@ import root from './utils/root.js';
 const app = express();
 const port = 3000;
 
+app.set('x-powered-by', false);
+
 // Adding a global configuration value | Ref: https://expressjs.com/en/5x/api.html#app.set
 app.set('view engine', 'pug');
-app.set('views', 'engine');
+app.set('views', ['views', 'views/pug', 'views/ejs']);
+app.use(express.static(path.join(root, 'public')));
 
 app.use(bps.urlencoded({ extended: false }));
-app.use(express.static(path.join(root, 'public')));
 
 app.use(display);
 app.use('/admin', admin);
