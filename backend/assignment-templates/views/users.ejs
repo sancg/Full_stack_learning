@@ -1,0 +1,15 @@
+<%- include('partial/head.ejs') %>
+</head>
+<body>
+    <%- include('partial/nav.ejs') %>
+    <main>
+        <% if (users?.length) { %>
+            <% for (const user of users) { %>
+                <li><%= user.name + ' ' + user.last_name %></li>
+            <% } %>
+        <% } else { %>
+            <h1> No users added </h1>
+        <% } %>
+    </main>
+    
+<%- include('partial/end.ejs') %>
