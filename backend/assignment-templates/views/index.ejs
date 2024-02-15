@@ -1,0 +1,21 @@
+<%- include('partial/head.ejs') %>
+</head>
+<body>
+    <%- include('partial/nav.ejs') %>
+    <main>
+        <form action="/register-user" method="post"
+            style="display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;">
+                <label for="user-name">Name</label>
+                <input id="user-name" type="text" name="name" required>
+                <br>
+                <label for="user-name">Last Name</label>
+                <input id="user-last-name" type="text" name="last_name" required>
+                <br>
+                <button type="submit">Send</button>
+        </form>
+    </main>
+    
+<%- include('partial/end.ejs') %>
