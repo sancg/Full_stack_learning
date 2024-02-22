@@ -78,14 +78,14 @@ admin.get('/users', (req, res) => {
   res.sendFile(path.join(root, 'templates', 'users.html'));
 });
 
-admin.get('/add-list', (req, res) => {
-  res.send(
-    `<form action="/my-listing" method="POST"><input type="text" name="kpop_band"><button type="submit">SEND</button></form>`
-  );
+admin.get('/add-product', (req, res) => {
+  res.render('addProduct', { title: 'New Product' });
 });
 
 admin.post('/my-listing', (req, res, next) => {
-  console.log({ data: req.body, params: req.params });
+  const { title, price, description } = req.body;
+  // console.log({ data: req.body, params: req.params });
+  products.push({ title, price, description });
   res.redirect('/');
 });
 
