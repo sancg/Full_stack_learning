@@ -1,20 +1,22 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Home - #{title}
-        link(rel="stylesheet", href="/css/app.css")
-    body 
-    include includes/navbar.pug
+extends layouts/layout.pug
+block styles
+    link(rel="stylesheet", href="/css/shop.css")
+    link(rel="stylesheet", href="/css/product.css")
+block content    
     main 
-        section 
-            h1 #{title}
-            p Listing
-            if prods.length > 0
-                ul
-                    each prod in prods
-                        li=prod.title
-            else 
-                p No products found
+        if prods.length > 0
+            .grid 
+                each prod in prods
+                    article.card.product-item
+                        .card__header
+                            h3.product__title=prod.title
+                        .card__image 
+                            img(src=prod.image)
+                        .card__content 
+                            h2.product__price='$ ' + prod.price
+                            p.product__description=prod.description
+                        .card__actions 
+                            button.btn Add to Cart
+        else 
+            p No products found
     footer This is an awesome footer
